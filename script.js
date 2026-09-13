@@ -118,14 +118,20 @@
     const body = section("education", "Education");
     education.forEach(item => {
       const entry = element("article", "entry education-entry");
-      appendText(entry, "h3", "", item.institution);
-      appendText(entry, "p", "education-qualification", item.qualification);
+      const heading = element("div", "education-heading");
+      appendText(heading, "h3", "", item.institution);
+      // 就读时间以独立单词 Present 结尾时自动显示；填写结束时间后自动隐藏。
+      if (/\bPresent$/i.test(clean(item.period))) {
+        heading.append(element("span", "education-current", "CURRENT"));
+      }
+      entry.append(heading);
+      words(item.details).forEach(detail => appendText(entry, "p", "education-detail", detail));
       // 只连接有内容的地点与时间，避免空行或多余的分隔点。
       const locationAndPeriod = [clean(item.location), clean(item.period)].filter(Boolean).join(" · ");
-      appendText(entry, "p", "education-secondary", locationAndPeriod);
-      words(item.details).forEach(detail => appendText(entry, "p", "education-secondary", detail));
+      appendText(entry, "p", "education-meta", locationAndPeriod);
+      appendText(entry, "p", "education-qualification", item.qualification);
       // GPA 留空、缺失或只有空格时，不创建元素，也不占用间距。
-      if (clean(item.gpa)) appendText(entry, "p", "education-secondary", "GPA: " + clean(item.gpa));
+      if (clean(item.gpa)) appendText(entry, "p", "education-gpa", "GPA: " + clean(item.gpa));
       body.append(entry);
     });
   }
