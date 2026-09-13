@@ -48,9 +48,35 @@ const portfolioContent = {
     // { title: "", organization: "", period: "", summary: "", link: { label: "", url: "" } },
   ],
 
-  // 这里添加教育背景。institution 必填，不上传或链接成绩单。
+  // 这里添加教育背景，按当前到过去排列。institution 学校名称必填。
+  // 复制下面任意一个 { ... } 即可新增学校；两项之间保留英文逗号。
+  // 空白模板：{ institution: "", qualification: "", period: "", location: "", details: [], gpa: "" }
+  // 不上传或链接成绩单，不填写未确认的成绩。
   education: [
-    // { institution: "", qualification: "", period: "", description: "" },
+    {
+      institution: "The Hong Kong University of Science and Technology", // 这里修改学校名称
+      qualification: "Master of Science in Chemical and Energy Engineering", // 这里修改学位
+      period: "Sep 2026 – Present", // 这里修改就读时间
+      location: "Hong Kong SAR", // 这里填写地点；留空则隐藏
+      details: ["QS World University Rankings 2027 · #33"], // 这里添加次级信息；没有内容用 []
+      gpa: "" // 以后在这里填写 GPA，例如 "3.49 / 4.00"；留空不显示
+    },
+    {
+      institution: "Guizhou University",
+      qualification: "Bachelor of Engineering in Chemical Engineering and Technology",
+      period: "Sep 2022 – Jul 2026",
+      location: "Guiyang, China",
+      details: ["National Double First-Class University · Former Project 211 University"],
+      gpa: ""
+    },
+    {
+      institution: "University of North Alabama",
+      qualification: "Bachelor of Science in Occupational Health and Safety",
+      period: "Sep 2022 – Jul 2026",
+      location: "Florence, Alabama, USA",
+      details: ["International Dual-Degree Program · English-taught"],
+      gpa: ""
+    }
   ],
 
   // 这里添加愿意公开的邮箱或职业主页；至少有一个有效联系方式才显示模块。

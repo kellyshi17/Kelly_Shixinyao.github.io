@@ -7,3 +7,8 @@
 @media(min-width:1001px){.menu-toggle{display:none!important}}
 @media(max-width:600px){.site-header,.hero,.section,.site-footer{width:calc(100% - 40px)}html{scroll-padding-top:24px}.hero{padding-top:36px}.edition{display:none}.hero h1{font-size:clamp(34px,9.89vw,59px);margin:0}.hero-name-group{margin:52px 0 28px}.chinese-name{font-size:19px;margin-top:10px}.hero-bottom{grid-template-columns:1fr;gap:24px}.hero-mark{display:none}.position{font-size:19px;line-height:1.65;max-width:340px}.hero-summary{font-size:16px}.hero-foot{margin-top:44px;font-size:9px;letter-spacing:.6px}.hero-foot a span{margin-left:10px}.section{grid-template-columns:1fr;gap:27px;padding:48px 0}.section-label span{display:inline;margin-right:14px}.section-content>h2{font-size:32px;letter-spacing:-1px}.profile-text{font-size:17px}.site-footer{flex-wrap:wrap;font-size:9px}.site-footer>span:nth-child(2){display:none}.project-grid .entry{padding:22px}.actions .button{flex-grow:1}.contact-links{display:block}.contact-links a{display:table}.tag{max-width:100%;overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Education only: qualification precedes quiet supporting information. */
+#education .education-qualification{font-size:17px;font-weight:500;color:var(--ink)}
+#education .education-secondary{font-size:14px;font-weight:400;line-height:1.65;color:var(--muted)}
+#education .education-entry p+p{margin-top:8px}
