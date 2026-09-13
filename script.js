@@ -45,10 +45,13 @@
   };
   const name = clean(data.name) || "SHI XINYAO";
   document.getElementById("hero-name").textContent = name;
+  const chineseName = document.getElementById("hero-chinese-name");
+  chineseName.textContent = clean(data.chineseName);
+  chineseName.hidden = !clean(data.chineseName);
   document.getElementById("footer-name").textContent = name;
   document.title = name + " | Portfolio";
   const brand = document.querySelector(".wordmark");
-  brand.textContent = clean(data.initials) || "SX";
+  brand.textContent = clean(data.wordmark) || name;
   brand.append(element("span", "", "."));
   const position = document.getElementById("hero-position");
   position.textContent = clean(data.positioning); position.hidden = !clean(data.positioning);

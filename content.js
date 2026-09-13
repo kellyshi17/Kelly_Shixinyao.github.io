@@ -7,9 +7,11 @@
  * 请勿填写电话、家庭地址、成绩单或私人文件链接。
  */
 const portfolioContent = {
-  // 这里修改姓名、职业定位；initials 是左上角的姓名缩写。
+  // 这里修改英文姓名、中文姓名和职业定位。中文姓名留空时自动隐藏。
   name: "SHI XINYAO",
-  initials: "SX",
+  chineseName: "施昕瑶",
+  // 这里修改左上角个人品牌文字；末尾的圆点会自动添加，不必填写。
+  wordmark: "KellyShi",
   positioning: "Project Management · Coordination · Problem Solving",
   heroSummary: "Exploring opportunities to bring clarity, coordination and purposeful execution to business teams.",
 
