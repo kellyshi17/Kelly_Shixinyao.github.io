@@ -203,7 +203,13 @@
       region.append(heading);
     }
     const status = element("p", "sr-only"); status.setAttribute("aria-live", "polite");
-    const grid = element("div", "story-grid"); region.append(status, grid); body.append(region);
+    const grid = element("div", "story-grid"); region.append(status, grid);
+    if (view === "home") {
+      const allWork = element("a", "text-link", "Explore All Work →");
+      allWork.href = "#work";
+      region.append(allWork);
+    }
+    body.append(region);
     lensViews[view] = { buttons, grid, region, status };
   }
   makeLens("home", "home-explore");

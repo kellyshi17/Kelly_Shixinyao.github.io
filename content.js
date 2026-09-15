@@ -168,6 +168,127 @@ const portfolioContent = {
         "Coordinated the team through final course-design delivery."
       ],
       "outcome": "The team completed the course design with a final score of 95/100, corresponding to full grade points for the course."
+    },
+    {
+      "published": true,
+      "period": "",
+      "image": "",
+      "imageAlt": "",
+      "gallery": [],
+      "externalLink": null,
+      "evidence": [],
+      "id": "silicon-anode-international-research",
+      "featured": true,
+      "priority": 85,
+      "title": "From Independent Research to International Presentation",
+      "organization": "ICTEES 2025 · IET Conference Proceedings",
+      "contextLabel": "Independent Project · Research Synthesis",
+      "summary": "Independently transformed a broad technical topic into a structured research framework, an English paper and an international conference presentation.",
+      "capabilities": [
+        "analyze-decide",
+        "communicate-influence",
+        "technical-context"
+      ],
+      "roleRelevance": [
+        "strategy-consulting",
+        "project-program",
+        "energy-sustainability",
+        "commercial-client-facing"
+      ],
+      "context": "The project examined coating and interface-engineering strategies for improving the stability of silicon anodes in lithium-ion batteries.",
+      "challenge": "Existing research covered different materials, mechanisms and performance objectives, making it difficult to compare approaches through a single consistent structure.",
+      "ownership": [
+        "Literature search and research synthesis",
+        "Development of the review structure",
+        "Full English academic writing",
+        "International conference presentation"
+      ],
+      "actions": [
+        "Reviewed and organized research on coating and interface-engineering strategies for silicon anodes.",
+        "Reframed the literature around three functional objectives: conductive enhancement, interface stabilization and stress buffering.",
+        "Connected functional requirements, structural design strategies and electrochemical performance within a unified framework.",
+        "Independently completed the English paper and delivered the oral presentation at ICTEES 2025."
+      ],
+      "outcome": "The work received the Best Student Paper Award and was published in IET Conference Proceedings."
+    },
+    {
+      "published": true,
+      "period": "",
+      "image": "",
+      "imageAlt": "",
+      "gallery": [],
+      "externalLink": null,
+      "evidence": [],
+      "id": "perovskite-solar-cell-process",
+      "featured": true,
+      "priority": 80,
+      "title": "Working Through a 20+ Batch Energy-Device Process",
+      "organization": "Anhui Institute of Innovation for Industrial Technology",
+      "contextLabel": "Energy Technology · Process Execution",
+      "summary": "Participated in a multi-stage perovskite solar-cell workflow spanning material preparation, thin-film fabrication, device integration and performance testing.",
+      "capabilities": [
+        "technical-context",
+        "deliver-improve"
+      ],
+      "roleRelevance": [
+        "energy-sustainability",
+        "operations",
+        "project-program"
+      ],
+      "context": "The internship involved the fabrication and testing of perovskite solar-cell devices through a sequence of interdependent laboratory processes.",
+      "challenge": "The workflow required consistent execution across solution preparation, thin-film processing, thermal treatment, evaporation, device integration and testing, with multiple process parameters affecting downstream steps.",
+      "ownership": [
+        "Independent spin-coating of selected thin-film layers",
+        "Process-parameter execution and recording",
+        "Support for device fabrication and integration",
+        "Experimental data recording and organization"
+      ],
+      "actions": [
+        "Prepared or supported the preparation of perovskite, hole-transport and electron-transport materials.",
+        "Independently used spin coating to fabricate selected thin-film layers while controlling speed, time and annealing conditions.",
+        "Participated in anti-solvent treatment, thermal annealing and high-vacuum thermal evaporation.",
+        "Supported device integration and J-V performance testing, and recorded and organized experimental data."
+      ],
+      "outcome": "Participated in the preparation of more than 20 batches of devices and gained end-to-end exposure to a multi-stage solar-cell fabrication and testing workflow."
+    },
+    {
+      "published": true,
+      "period": "",
+      "image": "",
+      "imageAlt": "",
+      "gallery": [],
+      "externalLink": null,
+      "evidence": [],
+      "id": "cross-cultural-communication",
+      "featured": false,
+      "priority": 75,
+      "title": "Communicating Across Cultures",
+      "organization": "Guizhou University",
+      "contextLabel": "International Engagement · Volunteer Experience",
+      "summary": "Supported international-facing university activities through programme explanation, English communication and exchange-student reception.",
+      "capabilities": [
+        "communicate-influence"
+      ],
+      "roleRelevance": [
+        "commercial-client-facing",
+        "management-trainee",
+        "project-program"
+      ],
+      "context": "During undergraduate study, I participated in university activities involving external visitors and international exchange students.",
+      "challenge": "These situations required information to be explained clearly to people with different backgrounds while adapting communication to unfamiliar questions and cross-cultural settings.",
+      "ownership": [
+        "Explaining programme information to visitors",
+        "Responding to questions during university exhibition activities",
+        "English communication with incoming exchange students",
+        "Supporting student reception and everyday communication"
+      ],
+      "actions": [
+        "Represented the school during an ASEAN-related education event and introduced the university's international joint-education programme to visitors.",
+        "Answered questions about why the programme was established and what students would study, explaining the combination of faculty, knowledge and cultural perspectives.",
+        "Supported the reception of exchange students and communicated with them in English about daily life in Guizhou.",
+        "Introduced simple Chinese expressions during informal communication and maintained contact with one of the students after the activity."
+      ],
+      "outcome": "Completed the assigned communication and reception responsibilities while gaining practical experience in cross-cultural interaction and audience-focused communication."
     }
   ],
 
