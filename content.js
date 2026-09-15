@@ -1,7 +1,7 @@
 /* 个人内容编辑指南
  * 1. 只修改引号里的文字；保留英文引号、逗号、方括号和花括号。
  * 2. 数组 [] 中每个 { ... } 是一条记录，两条记录之间用英文逗号分隔。
- * 3. 空数组 [] 会隐藏整个模块和导航；空字符串 "" 会隐藏可选字段。
+ * 3. 空数组 [] 会隐藏对应内容；顶部五个 View 导航始终保留；空字符串 "" 会隐藏可选字段。
  * 4. 以下注释模板不会公开显示。复制模板到对应 [] 内，再填写真实内容。
  * 5. 链接填写完整的 https:// 地址，站内资源使用 ./ 开头的相对路径。
  * 请勿填写电话、家庭地址、成绩单或私人文件链接。
@@ -23,19 +23,32 @@ const portfolioContent = {
     focusAreas: ["Project Management", "Project Coordination", "Operations", "Management Trainee"]
   },
 
-  // 这里添加经历。title 是必填的职位或经历名称，其他字段可删除或留空。
-  experience: [
-    // { title: "", organization: "", period: "", summary: "", bullets: [""], tags: [""], link: { label: "", url: "" } },
+  // 能力 ID 用于 Story 匹配；修改显示文字时保持 id 不变。
+  capabilities: [
+    { id: "lead-coordinate", label: "Lead & Coordinate", description: "Aligning people, priorities and timelines to move work forward." },
+    { id: "analyze-decide", label: "Analyze & Decide", description: "Turning complex information into structured insights and decisions." },
+    { id: "deliver-improve", label: "Deliver & Improve", description: "Getting things done while finding better ways to work." },
+    { id: "communicate-influence", label: "Communicate & Influence", description: "Connecting ideas and people through clear communication." },
+    { id: "technical-context", label: "Technical Context", description: "Understanding technical context without losing sight of the bigger picture." }
   ],
-
-  // 这里添加项目。复制这一项即可新增项目，填写 title 后才会显示。
-  projects: [
-    // { title: "", category: "", period: "", summary: "", role: "", actions: [""], outcome: "", tags: [""], link: { label: "", url: "" } },
-  ],
-
-  // 这里添加活动、志愿服务或领导力经历。title 必填。
-  activities: [
-    // { title: "", organization: "", period: "", summary: "", bullets: [""], tags: [""], link: { label: "", url: "" } },
+  // 源代码是公开的！published 只控制界面，不能保护隐私。
+  // 只填写已经确认公开的内容。复制下方模板并去掉每行开头的 // 即可新增。
+  // id：唯一英文标识，如 story-01；发布后尽量不改，以免旧链接失效。
+  // capabilities：从上方复制 id，主要能力放最前面；可同时填写多个。
+  // featured：true 表示 All 状态优先推荐；priority：数字越大，同等条件越靠前。
+  // image：相对图片路径；imageAlt：图片说明；没有图片保持空字符串。
+  // gallery 每项为 { src: "", alt: "", caption: "" }。
+  // evidence 每项为 { label: "", url: "" }，只链接确认公开的证据。
+  // roleRelevance 预留岗位视角，本版不筛选。可用 general、project-program、
+  // strategy-consulting、operations、energy-sustainability、commercial-client-facing。
+  stories: [
+    // {
+    //   id: "", published: false, title: "", organization: "", contextLabel: "",
+    //   period: "", summary: "", capabilities: [], roleRelevance: [],
+    //   context: "", challenge: "", ownership: [], actions: [], outcome: "",
+    //   image: "", imageAlt: "", gallery: [], externalLink: null, evidence: [],
+    //   featured: false, priority: 0
+    // }
   ],
 
   // 这里添加已确认的技能。每组必须填写 name 和至少一个 items 技能。
@@ -84,6 +97,8 @@ const portfolioContent = {
     heading: "Let’s connect.",
     description: "",
     email: "",
+    // 仅填写确认公开、且不含成绩单的 CV 链接；未提供时不显示。
+    cv: null,
     links: [
       // { label: "LinkedIn", url: "" },
     ]

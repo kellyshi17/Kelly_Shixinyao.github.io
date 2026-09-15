@@ -18,6 +18,7 @@
     <nav id="navigation" aria-label="Main navigation"><a href="#home">Home</a></nav>
   </header>
   <main id="main">
+    <div id="view-home" data-view="home">
     <section id="home" class="hero" aria-labelledby="hero-name">
       <div class="hero-top"><span class="eyebrow">Personal portfolio</span><span class="edition" aria-hidden="true">Clarity. Purpose. Progress.</span></div>
       <div class="hero-name-group">
@@ -25,11 +26,19 @@
         <p id="hero-chinese-name" class="chinese-name" lang="zh-Hans" hidden></p>
       </div>
       <div class="hero-bottom"><div><p id="hero-position" class="position">Project Management · Coordination · Problem Solving</p><p id="hero-summary" class="hero-summary" hidden></p><div id="hero-actions" class="actions" hidden></div></div><div class="hero-mark" aria-hidden="true"><span></span><span></span><span></span></div></div>
-      <div class="hero-foot"><span>Professional focus</span><a id="explore" href="#profile" hidden>Explore profile <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-foot"><span>Professional focus</span><a id="explore" href="#about" hidden>Explore About <span aria-hidden="true">↓</span></a></div>
     </section>
-    <div id="sections"></div>
+    <div id="home-explore"></div></div>
+    <div id="view-work" data-view="work" hidden></div>
+    <div id="view-education" data-view="education" hidden></div>
+    <div id="view-about" data-view="about" hidden></div>
+    <div id="view-contact" data-view="contact" hidden></div>
     <noscript><p class="noscript-note">Enable JavaScript to view the full portfolio.</p></noscript>
   </main>
+  <dialog id="story-dialog" aria-labelledby="story-title">
+    <div class="detail-toolbar"><button id="close-story" type="button">Close <span aria-hidden="true">×</span></button></div>
+    <div id="story-detail"></div>
+  </dialog>
   <footer class="site-footer"><span id="footer-name">SHI XINYAO</span><span>Personal portfolio</span><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>
