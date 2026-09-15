@@ -42,13 +42,133 @@ const portfolioContent = {
   // roleRelevance 预留岗位视角，本版不筛选。可用 general、project-program、
   // strategy-consulting、operations、energy-sustainability、commercial-client-facing。
   stories: [
-    // {
-    //   id: "", published: false, title: "", organization: "", contextLabel: "",
-    //   period: "", summary: "", capabilities: [], roleRelevance: [],
-    //   context: "", challenge: "", ownership: [], actions: [], outcome: "",
-    //   image: "", imageAlt: "", gallery: [], externalLink: null, evidence: [],
-    //   featured: false, priority: 0
-    // }
+    {
+      "published": true,
+      "featured": true,
+      "period": "",
+      "image": "",
+      "imageAlt": "",
+      "gallery": [],
+      "externalLink": null,
+      "evidence": [],
+      "id": "student-union-urgent-event",
+      "priority": 100,
+      "title": "Delivering an Urgent Campus Event on a Tight Timeline",
+      "organization": "Student Union, Guizhou University",
+      "contextLabel": "Project Coordination",
+      "summary": "Coordinated people, suppliers and event preparation under a highly compressed timeline.",
+      "capabilities": [
+        "lead-coordinate",
+        "deliver-improve",
+        "communicate-influence"
+      ],
+      "roleRelevance": [
+        "project-program",
+        "operations",
+        "management-trainee"
+      ],
+      "context": "A university-wide activity was assigned at approximately 20:00, with preparations required before 10:10 the following morning.",
+      "challenge": "The preparation window was highly compressed, while procurement, promotional materials, staffing, teacher communication and on-site setup had to progress in parallel.",
+      "ownership": [
+        "Coordinating available student members",
+        "Following up purchasing and materials preparation",
+        "Supporting poster and banner preparation",
+        "Communicating progress with teachers",
+        "Coordinating on-site preparation"
+      ],
+      "actions": [
+        "Used a previously organized member availability schedule to identify available people quickly.",
+        "Split urgent tasks across available members and followed up progress.",
+        "Coordinated procurement, promotional materials and preparation activities in parallel.",
+        "Maintained communication with teachers and team members to keep preparation on schedule."
+      ],
+      "outcome": "The required preparation was completed within the available time window and the activity proceeded as scheduled."
+    },
+    {
+      "published": true,
+      "featured": true,
+      "period": "",
+      "image": "",
+      "imageAlt": "",
+      "gallery": [],
+      "externalLink": null,
+      "evidence": [],
+      "id": "zhengda-market-research",
+      "priority": 95,
+      "title": "Turning a Tourism Trend into a National Award-Winning Market Study",
+      "organization": "Zhengda Cup Market Research Competition",
+      "contextLabel": "Market Research",
+      "summary": "Helped structure and coordinate a market research project that progressed from field research to national recognition.",
+      "capabilities": [
+        "analyze-decide",
+        "lead-coordinate",
+        "communicate-influence"
+      ],
+      "roleRelevance": [
+        "strategy-consulting",
+        "project-program",
+        "management-trainee"
+      ],
+      "context": "The team developed a market research project around an emerging tourism-related topic and needed to convert a broad idea into a structured study.",
+      "challenge": "The project required the team to define a clear research direction, organize field research, coordinate responsibilities and translate collected information into a competition-ready study.",
+      "ownership": [
+        "Supporting topic and research-direction definition",
+        "Coordinating task allocation",
+        "Clarifying data and analysis requirements",
+        "Coordinating external analytical support",
+        "Supporting report and presentation preparation"
+      ],
+      "actions": [
+        "Participated in structuring the research approach and questionnaire requirements.",
+        "Coordinated responsibilities across the team.",
+        "Helped clarify what evidence and analytical outputs were required.",
+        "Coordinated with external analytical support rather than claiming statistical modelling as my own work.",
+        "Supported the preparation of the final research output and competition presentation."
+      ],
+      "outcome": "Collected 649 valid questionnaires and achieved Provincial First Prize and National Third Prize in the competition."
+    },
+    {
+      "published": true,
+      "featured": true,
+      "period": "",
+      "image": "",
+      "imageAlt": "",
+      "gallery": [],
+      "externalLink": null,
+      "evidence": [],
+      "id": "course-design-excel-workflow",
+      "priority": 90,
+      "title": "Improving a Team Design Workflow with Excel",
+      "organization": "Undergraduate Aerodynamics Pipeline Course Design",
+      "contextLabel": "Team Lead · Process Improvement",
+      "summary": "Led a team course-design project while improving a calculation-heavy workflow through a reusable Excel formula library.",
+      "capabilities": [
+        "deliver-improve",
+        "lead-coordinate",
+        "analyze-decide"
+      ],
+      "roleRelevance": [
+        "operations",
+        "project-program",
+        "management-trainee"
+      ],
+      "context": "An undergraduate aerodynamics pipeline course-design project required repeated engineering calculations, 3D modelling and coordinated team delivery.",
+      "challenge": "Most team members were simultaneously preparing for postgraduate entrance examinations, while repeated manual calculations made several stages of the design process time-consuming.",
+      "ownership": [
+        "Team coordination and project progress",
+        "Excel calculation workflow improvement",
+        "Several time-intensive project tasks",
+        "Full 3D modelling of the pipeline in SolidWorks"
+      ],
+      "actions": [
+        "Built a reusable Excel formula library so team members could enter the required input data and obtain calculation results directly.",
+        "Used the Excel workflow throughout different stages of the course design to reduce repetitive manual calculation.",
+        "Adjusted task allocation around team members' availability and took ownership of several time-intensive tasks.",
+        "Independently completed the full 3D SolidWorks model of the pipeline.",
+        "Coordinated the team through final course-design delivery."
+      ],
+      "outcome": "The team completed the course design with a final score of 95/100, corresponding to full grade points for the course."
+    }
   ],
 
   // 这里添加已确认的技能。每组必须填写 name 和至少一个 items 技能。

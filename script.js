@@ -197,7 +197,11 @@
     });
     body.append(buttons);
     const region = element("div", "stories-region");
-    if (view === "home") region.append(element("h3", "stories-title", "Selected Stories"));
+    if (view === "home") {
+      const heading = element("h3", "section-label stories-title");
+      heading.append(element("span", "", "05"), document.createTextNode("Selected Stories"));
+      region.append(heading);
+    }
     const status = element("p", "sr-only"); status.setAttribute("aria-live", "polite");
     const grid = element("div", "story-grid"); region.append(status, grid); body.append(region);
     lensViews[view] = { buttons, grid, region, status };
